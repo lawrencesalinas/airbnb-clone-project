@@ -33,6 +33,12 @@
     background-color: white;
     color: #ff7779;
 }
+.banner_search {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .banner_searchButton {
     background-color: white !important;
