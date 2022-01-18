@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <Header/>
-      {/* <Home/> */}
+      <Home/>
     {/* Header
       Banner
       Search
