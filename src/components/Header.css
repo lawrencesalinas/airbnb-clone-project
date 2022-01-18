@@ -1,5 +1,18 @@
+.header{
+    display: flex;
+}
+
 .airbnb_icon{
     object-fit: contain;
     height: 100px;
     margin-left: 4% ;
+  }
+
+  .header_center{
+      display: flex;
+      align-items: center;
+  }
+
+  .header_right{
+      display: flex;
   }
