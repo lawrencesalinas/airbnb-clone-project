@@ -1,18 +1,46 @@
 .header{
     display: flex;
+    justify-content: space-between;
+    /* position sticky and top 0 keeps header on top when scrolling */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* z index so its on top of everything */
+    z-index:  100;
+    width: 100%;
 }
 
 .airbnb_icon{
     object-fit: contain;
     height: 100px;
     margin-left: 4% ;
+  
+
   }
 
   .header_center{
+      margin-top: 1%;
       display: flex;
+      flex: 1;
       align-items: center;
+      max-width: fit-content;
+      padding: 10px;
+      height: 30px;
+      border: 1px solid lightgray;
+      border-radius: 999px;
+  }
+
+  .header_center > input {
+      border: none;
+    padding: 10px;
+    /* take out blue line use outline wisdth 0 */
+    outline-width: 0;
   }
 
   .header_right{
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 15vw;
+      margin-right: 80px;
   }
