@@ -7,9 +7,11 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import PeopleAlt from "@mui/icons-material/PeopleAlt";
+import { useNavigate } from 'react-router-dom'
 
 // DATE PCIKER
 function Search() {
+  const navigate = useNavigate()
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -31,7 +33,7 @@ function Search() {
         <PeopleAltIcon />
       </h2>
       <input min={0} defaultValue={2} type="number" />
-      <Button>Search Airbnb</Button>
+      <Button onClick={()=> navigate('/search') }>Search Airbnb</Button>
     </div>
   );
 }
