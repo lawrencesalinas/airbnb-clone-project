@@ -1,6 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* position sticky and top 0 keeps header on top when scrolling */
     position: sticky;
     top: 0;
@@ -13,7 +14,7 @@
 .airbnb_icon{
     object-fit: contain;
     height: 100px;
-    margin-left: 4% ;
+    margin-left: 20px ;
   
 
   }
